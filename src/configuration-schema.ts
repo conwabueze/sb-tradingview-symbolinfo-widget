@@ -29,10 +29,9 @@ export const configurationSchema: JSONSchema7 = {
       default: "NASDAQ:AAPL",
     },
     width: {
-      type: "integer",
+      type: "string",
       title: "Widget Width",
-      default: 1000,
-      minimum: 400,    
+      default: "100%",   
     },
     theme:{
       type: "string",
@@ -56,7 +55,7 @@ export const uiSchema: UiSchema = {
     "ui:help": "Please enter symbol name. (For correct syntax of your desired symbol please refer to  widget URL: https://www.tradingview.com/widget/symbol-info/) ",
   },
   width: {
-    "ui:help": "Please enter width of widget",
+    "ui:help": "Please enter width of widget. You can enter in exact pixel width (ex: 1000) or a percentage (ex: 75%)",
   },
   theme: {
     "ui:help": "Enter in 'light' or 'dark'",

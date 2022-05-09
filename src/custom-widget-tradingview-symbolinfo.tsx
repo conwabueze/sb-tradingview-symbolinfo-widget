@@ -33,9 +33,10 @@ import { Error } from "./components/Error";
 export const CustomWidgetTradingViewSymbolInfo = ({ symbol, width, locale, theme }: CustomWidgetTradingViewSymbolInfoProps): ReactElement => {
 
   const defaultWidth = 1000;
+  console.log(width);
 
-  return <div>
-    <div><SymbolInfo widgetProps={{colorTheme:theme, symbol:symbol, locale:locale,width:width ? width : defaultWidth}} /></div>
+  return <div className="tradingview-widget">
+  <SymbolInfo widgetProps={{colorTheme:theme, symbol:symbol, locale:locale, width:width}} />
   </div>
 };
 
