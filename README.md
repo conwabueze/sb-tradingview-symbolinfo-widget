@@ -1,4 +1,4 @@
-# Custom Widget *Twitter Feed* for Staffbase Platform
+# Custom Widget *Stock Ticker* for Staffbase Platform
 
 ----
 
